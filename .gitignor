@@ -1,0 +1,45 @@
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore RStudio project files
+*.Rproj.user/
+.Rhistory
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore database files
+*.db
+
+# Ignore log and temporary files
+*.log
+*.tmp
+
+# Ignore large files (greater than 100MB)
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.bin
+*.iso
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.exe
+*.dll
+*.img
+*.msi
+
+# Ignore any file larger than 100MB (as an additional safeguard)
+# Git does not support a direct way to ignore files by size in .gitignore, but you can use Git attributes to prevent large files from being committed:
+# Use the command below in your terminal to exclude large files from being committed:
+# git config --global filter.largefile.clean "test $(wc -c <\"$1\") -gt 104857600 && echo 'File is too large (> 100MB) and cannot be committed' && exit 1 || cat"
+
+# Manually add large files here that are common in your project but are not already included in the above patterns.
+
